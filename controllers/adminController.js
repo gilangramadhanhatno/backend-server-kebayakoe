@@ -20,7 +20,7 @@ module.exports = {
       if (req.session.user == null || req.session.user == undefined) {
         res.render("index", {
           alert,
-          title: "SetiawanStore | Login",
+          title: "KebayaKoe | Login",
         });
       } else {
         res.redirect("/admin/dashboard");
@@ -69,7 +69,7 @@ module.exports = {
       const booking = await Booking.find();
       const item = await Item.find();
       res.render("admin/dashboard/view_dashboard", {
-        title: "SetiawanStore | Dashboard",
+        title: "KebayaKoe | Dashboard",
         user: req.session.user,
         member,
         booking,
@@ -90,7 +90,7 @@ module.exports = {
       res.render("admin/category/view_category", {
         category,
         alert,
-        title: "SetiawanStore | Category",
+        title: "KebayaKoe | Category",
         user: req.session.user,
       });
     } catch (error) {
@@ -150,7 +150,7 @@ module.exports = {
       res.render("admin/bank/view_bank", {
         bank,
         alert,
-        title: "SetiawanStore | Bank",
+        title: "KebayaKoe | Bank",
         user: req.session.user,
       });
     } catch (error) {
@@ -231,7 +231,7 @@ module.exports = {
       const alertStatus = req.flash("alertStatus");
       const alert = { message: alertMessage, status: alertStatus };
       res.render("admin/item/view_item", {
-        title: "SetiawanStore | Item",
+        title: "KebayaKoe | Item",
         category,
         alert,
         item,
@@ -277,7 +277,7 @@ module.exports = {
       const alertStatus = req.flash("alertStatus");
       const alert = { message: alertMessage, status: alertStatus };
       res.render("admin/item/view_item", {
-        title: "SetiawanStore | Show Image Item",
+        title: "KebayaKoe | Show Image Item",
         alert,
         item,
         action: "show image",
@@ -298,7 +298,7 @@ module.exports = {
       const alertStatus = req.flash("alertStatus");
       const alert = { message: alertMessage, status: alertStatus };
       res.render("admin/item/view_item", {
-        title: "SetiawanStore | Show Edit Item",
+        title: "KebayaKoe | Show Edit Item",
         alert,
         item,
         category,
@@ -378,7 +378,7 @@ module.exports = {
     try {
       const booking = await Booking.find().populate("memberId").populate("bankId");
       res.render("admin/booking/view_booking", {
-        title: "SetiawanStore | Booking",
+        title: "KebayaKoe | Booking",
         user: req.session.user,
         booking,
       });
@@ -395,7 +395,7 @@ module.exports = {
 
       const booking = await Booking.findOne({ _id: id }).populate("memberId").populate("bankId");
       res.render("admin/booking/show_detail_booking", {
-        title: "SetiawanStore | Booking",
+        title: "KebayaKoe | Booking",
         user: req.session.user,
         booking,
         alert,

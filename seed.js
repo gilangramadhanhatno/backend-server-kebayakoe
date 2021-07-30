@@ -236,13 +236,6 @@ var data = [
         email: "ronaldo@gmail.com",
         phoneNumber: "087812345678",
       },
-      {
-        _id: mongoose.Types.ObjectId("5e96cbe292b97300fc903334"),
-        firstName: "Sergio",
-        lastName: "Ramos",
-        email: "ramos@gmail.com",
-        phoneNumber: "087887654321",
-      },
     ],
   },
   {
