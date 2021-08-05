@@ -6,9 +6,10 @@ var logger = require("morgan");
 const methodOverride = require("method-override");
 const session = require("express-session");
 const flash = require("connect-flash");
+const cors = require("cors");
 // import mongoose
 const mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://gilangramadhanhatno:setiawanstore@cluster0.sjnip.mongodb.net/db_setiawan_store?retryWrites=true&w=majority", {
+mongoose.connect("mongodb://127.0.0.1:27017/db_kebayakoe", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
@@ -36,7 +37,7 @@ app.use(
   })
 );
 app.use(flash());
-
+app.use(cors());
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
