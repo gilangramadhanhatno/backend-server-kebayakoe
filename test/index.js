@@ -25,7 +25,7 @@ describe("API ENDPOINT TESTING", () => {
   it("GET Detail Page", (done) => {
     chai
       .request(app)
-      .get("/api/v1/member/detail-page/5e96cbe292b97300fc902225")
+      .get("/api/v1/member/detail-page/5e96cbe292b97300fc902222")
       .end((err, res) => {
         expect(err).to.be.null;
         expect(res).to.have.status(200);
@@ -49,7 +49,7 @@ describe("API ENDPOINT TESTING", () => {
     const image = __dirname + "/buktibayar.jpeg";
     const dataSample = {
       image,
-      idItem: "5e96cbe292b97300fc902225",
+      idItem: "5e96cbe292b97300fc902222",
       buy: 2,
       bookingSelectDate: "07-08-2021",
       firstName: "Ricardo",

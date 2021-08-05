@@ -203,12 +203,12 @@ var data = [
     documents: [
       {
         _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cee1"),
-        bookingSelectDate: "07-14-2021",
+        bookingSelectDate: "9-10-2021",
         invoice: 1231231,
         itemId: {
           _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902222"),
           title: "White Pure",
-          price: 89,
+          price: 59,
           buy: 2,
         },
         total: 178,
