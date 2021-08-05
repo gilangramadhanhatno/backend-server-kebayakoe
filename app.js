@@ -9,7 +9,7 @@ const flash = require("connect-flash");
 const cors = require("cors");
 // import mongoose
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://127.0.0.1:27017/db_kebayakoe", {
+mongoose.connect("mongodb+srv://gilangramadhanhatno:kebayakoe@cluster0.sjnip.mongodb.net/db_kebayakoe?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
