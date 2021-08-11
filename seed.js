@@ -31,7 +31,7 @@ var data = [
     documents: [
       {
         _id: mongoose.Types.ObjectId("5e96cbe292b97300fc901111"),
-        name: "Kebaya",
+        name: "Category 1",
         itemId: [
           { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902222") },
           { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902223") },
@@ -41,7 +41,7 @@ var data = [
       },
       {
         _id: mongoose.Types.ObjectId("5e96cbe292b97300fc901112"),
-        name: "Gamis",
+        name: "Category 2",
         itemId: [
           { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902226") },
           { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902227") },
@@ -56,23 +56,23 @@ var data = [
   {
     model: "Item",
     documents: [
-      // White Pure
+      // Gambar 1
       {
         _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902222"),
-        title: "White Pure",
-        price: 59,
+        title: "Gambar 1",
+        price: 159000,
         imageId: [
           // done
           { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb1") },
         ],
         categoryId: "5e96cbe292b97300fc901111",
       },
-      // Maxmara
+      // Gambar 2
       {
         // done
         _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902223"),
-        title: "Maxmara",
-        price: 129,
+        title: "Gambar 2",
+        price: 129000,
         imageId: [
           // done
           { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb2") },
@@ -80,11 +80,11 @@ var data = [
         categoryId: "5e96cbe292b97300fc901111",
       },
 
-      // Soraya Kebaya
+      // Gambar 3
       {
         _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902224"),
-        title: "Soraya Kebaya",
-        price: 119,
+        title: "Gambar 3",
+        price: 119000,
         imageId: [
           // done
           { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb3") },
@@ -92,11 +92,11 @@ var data = [
         categoryId: "5e96cbe292b97300fc901111",
       },
 
-      // Dhievine Batik
+      // Gambar 4
       {
         _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902225"),
-        title: "Dhievine Batik",
-        price: 99,
+        title: "Gambar 4",
+        price: 99000,
         imageId: [
           // done
           { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb4") },
@@ -104,11 +104,11 @@ var data = [
         categoryId: "5e96cbe292b97300fc901111",
       },
 
-      // Sabyan Gamis
+      // Gambar 5
       {
         _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902226"),
-        title: "Sabyan Gamis",
-        price: 89,
+        title: "Gambar 5",
+        price: 89000,
         imageId: [
           // done
           { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb5") },
@@ -116,11 +116,11 @@ var data = [
         categoryId: "5e96cbe292b97300fc901112",
       },
 
-      // Gamis Brokat
+      // Gambar 6
       {
         _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902227"),
-        title: "Gamis Brokat",
-        price: 109,
+        title: "Gambar 6",
+        price: 109000,
         imageId: [
           // done
           { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb6") },
@@ -128,11 +128,11 @@ var data = [
         categoryId: "5e96cbe292b97300fc901112",
       },
 
-      // Gamis Etnic
+      // Gambar 7
       {
         _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902228"),
-        title: "Gamis Etnic",
-        price: 75,
+        title: "Gambar 7",
+        price: 75000,
         imageId: [
           // done
           { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb7") },
@@ -140,11 +140,11 @@ var data = [
         categoryId: "5e96cbe292b97300fc901112",
       },
 
-      // Shafiqa Longdress
+      // Gambar 8
       {
         _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902229"),
-        title: "Shafiqa Longdress",
-        price: 79,
+        title: "Gambar 8",
+        price: 79000,
         imageId: [
           // done
           { _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cdb8") },
@@ -207,11 +207,11 @@ var data = [
         invoice: 1231231,
         itemId: {
           _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902222"),
-          title: "White Pure",
-          price: 59,
+          title: "Gambar 1",
+          price: 59000,
           buy: 2,
         },
-        total: 178,
+        total: 178000,
         memberId: mongoose.Types.ObjectId("5e96cbe292b97300fc903333"),
         bankId: mongoose.Types.ObjectId("5e96cbe292b97300fc903323"),
         payments: {
@@ -246,14 +246,14 @@ var data = [
         nameBank: "Mandiri",
         nomorRekening: "089898",
         name: "setiawan",
-        imageUrl: "images/logo bca.png",
+        imageUrl: "images/logo-mandiri.png",
       },
       {
         _id: mongoose.Types.ObjectId("5e96cbe292b97300fc903323"),
         nameBank: "BCA",
         nomorRekening: "878678",
         name: "setiawan",
-        imageUrl: "images/logo mandiri.png",
+        imageUrl: "images/logo-bca.png",
       },
     ],
   },

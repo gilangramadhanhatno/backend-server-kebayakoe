@@ -101,7 +101,7 @@ module.exports = {
     try {
       const { name } = req.body;
       await Category.create({ name });
-      req.flash("alertMessage", "Success Add Category");
+      req.flash("alertMessage", "Sukses Tambah Category");
       req.flash("alertStatus", "success");
       res.redirect("/admin/category");
     } catch (error) {
@@ -116,7 +116,7 @@ module.exports = {
       const category = await Category.findOne({ _id: id });
       category.name = name;
       await category.save();
-      req.flash("alertMessage", "Success Update Category");
+      req.flash("alertMessage", "Sukses Ubah Category");
       req.flash("alertStatus", "success");
       res.redirect("/admin/category");
     } catch (error) {
@@ -168,7 +168,7 @@ module.exports = {
         name,
         imageUrl: `images/${req.file.filename}`,
       });
-      req.flash("alertMessage", "Success Add Bank");
+      req.flash("alertMessage", "Sukses Tambah Bank");
       req.flash("alertStatus", "success");
       res.redirect("/admin/bank");
     } catch (error) {
@@ -186,7 +186,7 @@ module.exports = {
         bank.nomorRekening = nomorRekening;
         bank.name = name;
         await bank.save();
-        req.flash("alertMessage", "Success Update Bank");
+        req.flash("alertMessage", "Sukses Ubah Bank");
         req.flash("alertStatus", "success");
         res.redirect("/admin/bank");
       } else {
@@ -196,7 +196,7 @@ module.exports = {
         bank.name = name;
         bank.imageUrl = `images/${req.file.filename}`;
         await bank.save();
-        req.flash("alertMessage", "Success Update Bank");
+        req.flash("alertMessage", "Sukses Ubah Bank");
         req.flash("alertStatus", "success");
         res.redirect("/admin/bank");
       }
@@ -259,7 +259,7 @@ module.exports = {
       const imageSave = await Image.create({ imageUrl: `images/${req.file.filename}` });
       item.imageId.push({ _id: imageSave._id });
       await item.save();
-      req.flash("alertMessage", "Success Add Item");
+      req.flash("alertMessage", "Sukses Tambah Item");
       req.flash("alertStatus", "success");
       res.redirect("/admin/item");
     } catch (error) {
@@ -328,7 +328,7 @@ module.exports = {
         item.price = price;
         item.categoryId = categoryId;
         await item.save();
-        req.flash("alertMessage", "Success Update Item");
+        req.flash("alertMessage", "Sukses Ubah Item");
         req.flash("alertStatus", "success");
         res.redirect("/admin/item");
       } else {
@@ -336,7 +336,7 @@ module.exports = {
         item.price = price;
         item.categoryId = categoryId;
         await item.save();
-        req.flash("alertMessage", "Success Update Item");
+        req.flash("alertMessage", "Sukses Ubah Item");
         req.flash("alertStatus", "success");
         res.redirect("/admin/item");
       }

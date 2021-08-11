@@ -10,10 +10,10 @@
         <div class="row ml-1">
           <% if (booking.payments.status == "Proses") { %>
           <form action="/admin/booking/<%= booking.id %>/confirmation?_method=PUT" method="POST">
-            <button type="submit" class="btn btn-success btn-sm"><i class="fas fa-check"></i>Confirmation</button>
+            <button type="submit" class="btn btn-success btn-sm"><i class="fas fa-check"></i>Konfirmasi</button>
           </form>
           <form action="/admin/booking/<%= booking.id %>/reject?_method=PUT" method="POST" class="ml-2">
-            <button type="submit" class="btn btn-danger btn-sm"><i class="fas fa-times"></i>Reject</button>
+            <button type="submit" class="btn btn-danger btn-sm"><i class="fas fa-times"></i>Tolak</button>
           </form>
 
           <% } %>
@@ -24,16 +24,16 @@
           <table class="table table-bordered" id="dataTableActivity" width="100%" cellspacing="0">
             <thead>
               <tr>
-                <th>Name Member</th>
+                <th>Nama Member</th>
                 <th>Total</th>
                 <th>Bank From</th>
-                <th>Title</th>
+                <th>Nama</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td><%= booking.memberId.firstName %> <%= booking.memberId.lastName %></td>
-                <td>$<%= booking.total %></td>
+                <td>Rp <%= booking.total %></td>
                 <td><%= booking.payments.bankFrom %></td>
                 <td><%= booking.itemId.title %></td>
               </tr>
